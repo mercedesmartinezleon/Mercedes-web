@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presupuesto - Mercedes Martínez</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mercedes Martínez Web</div>
+            <ul>
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portafolio</a></li>
+                <li><a href="presupuesto.html" class="nav-link active">Presupuesto</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Solicita un presupuesto</h1>
+        <p>Si estás interesado en alguno de mis servicios de desarrollo web, puedes utilizar este formulario para solicitar más información o pedir un presupuesto personalizado. Rellena todos los campos y me pondré en contacto contigo lo antes posible.</p>
+
+        <form action="#" method="post" class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="Ej: 666123456">
+
+            <label for="info">Solicite más información:</label>
+            <textarea id="info" name="info" rows="5" required></textarea>
+
+            <div class="checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <img src="../img/logofacebook.png" alt="Perfil de Mercedes Martínez en Facebook" width="24" height="24">
+            <img src="../img/logoinstagram.jpg" alt="Perfil de Mercedes Martínez en Instagram" width="24" height="24">
+            <img src="../img/logolinkedin.png" alt="Perfil de Mercedes Martínez en LinkedIn" width="24" height="24">
+        </div>
+        <p>Dirección: Paraíso Interior 9, 23009 Jaén</p>
+        <p><a href="aviso.html">Aviso legal</a></p>
+    </footer>
+
+</body>
+</html>
